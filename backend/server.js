@@ -27,3 +27,6 @@ mongoose.connect(process.env.mongourl)
         
     })
 app.use("/api",useroutes)
+app.get("/",(req,res)=>{
+    res.json("welcome to notes")
+})
